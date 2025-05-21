@@ -1,0 +1,19 @@
+# compilation files
+*.o
+*.exe
+*.obj
+*.pdb
+*.ilk
+
+# environment configuration
+.vscode/*
+
+# Dependencies 
+build/
+bin/
+obj/
+
+*.sln
+*.vcx*
+*.vs
+*x64
