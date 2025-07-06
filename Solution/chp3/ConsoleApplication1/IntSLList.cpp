@@ -119,7 +119,7 @@ int IntSLList::deleteNode(int el)
                 pred->next = temp->next;
                 if (temp == tail)
                 {
-                    tail = temp;
+                    tail = pred;
                 }
                 delete temp;
             }
@@ -153,6 +153,6 @@ void IntSLList::printList()
 bool IntSLList::isInList(int el) const
 {
     IntSLLNODE* temp;
-    for (temp = head; temp != nullptr && !(temp->info == el); tmp = tmp->next);
+    for (temp = head; temp != nullptr && !(temp->info == el); temp = temp->next);
     return (temp != nullptr);
 }
